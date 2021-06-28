@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <div class = "container">
+    <header>
+        <h1 id="title">League of Legends intentional feeder survey Form</h1>
+        <p id="description"> Thank you for taking the time to help us improve our game</p>
+    </header>
+    
+
+    <section class="mySurvey">
+        <form action="process.php" id="survey-form" >
+
+            <div class=box-1>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" required name="" id="name" placeholder = "Enter Your Name">
+            </div>
+
+            <div class=box-1>
+                <label for="email" id=email-label>Email</label>
+                <input type="text" required name="" id="email" placeholder = "Enter Your Email">
+            </div>
+
+            <div class=box-1>
+                <label for="age" id=age-label>Age(optional)</label>
+                <input type="number" id="Age" placeholder = "Age">
+            </div> 
+ 
+            <div class=box-1>
+                <label for="name" id="number-label">How many games have you inted?</label>
+                <input type="number" required name="" id="number" min="0", max="10000" >
+            </div>
+            <div class=box-1>
+                <label for="currentRole" required placeholder="select current role" id="dropdown">Which option best describes your current role?</label>
+                <select name="" id="">
+                    <option value="adc">crying adc</option>
+                    <option value="jg">useless jungler</option>
+                    <option value="sup">dying support</option>
+                    <option value="mid">trash mid</option>
+                    <option value="top">afk top</option>
+                </select>
+            <div class="box-1">
+                <label for="name" id="number-label">Please select how strong your mental is</label>
+                <label for="mental">
+                    <label for="mental">  <input type="radio" name="mental">13 year old malding teenager  </label> 
+                    <label for="mental">  <input type="radio" name="mental">5 year old tilter   </label>  
+                    <label for="mental">  <input type="radio" name="mental">Tyler1 level untiltable </label>
+                </label>
+                
+                    </div>
+            </div>
+            <div class= "box-1">
+                <label for="checkBox">Select the following if applicable:</label>
+                <div>
+                    <label for="box1">
+                        <input type="checkbox"  name="box1" id="box1">
+                        I have verbally abused my teammates
+                    </label>
+                   
+                  </div>
+                  
+
+                  <div>
+                    <label for="box1">
+                        <input type="checkbox"  name="box1" id="box1">
+                        I have intentionally fed in a game
+                    </label>
+                   
+                  </div> 
+
+                  
+                  <div>
+                    <label for="box1">
+                        <input type="checkbox"  name="box1" id="box1">
+                        I have intentionally disconnected
+                    </label>
+                   
+                  </div> 
+                    <div>
+                    <label for="box1">
+                        <input type="checkbox"  name="box1" id="box1">
+                        I have been verbally abused by my teammates
+                    </label>
+                   
+                  </div> 
+            </div>
+            <div class=box-1>
+                <label for="commentSuggestion-label">Any comments or suggestions?</label>
+                <textarea name="commentSuggestion" id="" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div class="box-1"> <button type="sub" id="submit" onclick="location.href = 'quit.html';"> submit</button></div>
+
+        </form>
+
+    </section>
+</div>
+</body>
+</html>
