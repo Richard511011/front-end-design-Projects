@@ -144,7 +144,7 @@ img{
 .footer .social >*{
     margin-right:30px;
 }
-@media(max-witdth 758px){
+@media(max-width: 758px){
     .navbar{
         flex-direction: column;
 height: 120px;
