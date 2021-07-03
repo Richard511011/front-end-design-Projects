@@ -144,6 +144,7 @@ img{
 .footer .social >*{
     margin-right:30px;
 }
+/* Media Query */
 @media(max-width: 758px){
     .navbar{
         flex-direction: column;
