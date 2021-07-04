@@ -16,7 +16,7 @@
 <body id="home">
     <header class="mainBackground blog">
         <!-- navigation bar section start -->
-        <div class="navbar" id="navbar">
+        <div class="navbar top" id="navbar">
 
              <!-- The logo with title (left hand side of the navbar) -->
             <h1 class="logo">
@@ -109,5 +109,27 @@
         </div>
         <p>copyright &copy 2021 - Richard Yu</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function(){
+            if(window.pageYOffset>100){
+                navbar.classList.remove('top');
+                // if(!scrolled){
+                //     navbar.style.transform = 'translateY(-70px)';
+                // }
+                // setTimeout(function(){
+                //     mavbar.style.transform = 'translateY(0)';
+                //     scrolled=true;
+                // },200)
+            }else{
+                navbar.classList.add('top');
+                scrolled=false;
+            }
+        }
+    </script>
 </body>
 </html>
