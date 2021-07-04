@@ -60,6 +60,7 @@
     width:100%;
 
 }
+
 .flex-columns .flex-reverse .blog{
     flex-direction: row-reverse; 
 }
@@ -153,6 +154,7 @@ padding: 4px;
     align-items:center;
 margin-top:5 
 } */
+/*   */
 .callback-form{
     width: 100%;
     padding: 20px 0;
@@ -160,7 +162,7 @@ margin-top:5
 .callback-form label{
     display:block;
     margin-bottom: 5px;
-}
+} 
 .callback-form .form-control{
 
     margin-bottom: 15px;
